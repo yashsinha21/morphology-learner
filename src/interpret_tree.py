@@ -1,6 +1,7 @@
 from sklearn.tree import _tree
+import numpy as np
 
-def interpret_decision_tree(clf, feature_names):
+def interpret_tree(clf, feature_names):
   """
     Converts a decision tree into linguist-readable morphological specifications
     by extracting paths to each leaf node. 
